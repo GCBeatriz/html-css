@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0px;
+        }
+        header {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding:10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(124, 124, 124);
+        }
+        nav {
+            background-color: rgb(56, 55, 55);
+            padding: 3px; /* para dar uma engordadinha */
+        }
+        nav > a {
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+            margin-right:30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: black;
+            color:white;
+            text-align: center;
+            padding: 1px;
+            margin:0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"> <p>Esportes Política tecnologia</p></section>
+        <section id="noticias">
+            <article>
+                <aside>
+                    <h2>Noticia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eveniet distinctio facere, necessitatibus odio similique molestiae adipisci est voluptates saepe veritatis eius enim porro itaque harum consequatur assumenda sed laboriosam.</p>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <h2>Noticia 2</h2>
+            <article> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at magni facilis dolor accusantium vel aliquam quidem atque quisquam sunt et pariatur ex possimus rem dolorum, quis aperiam beatae sequi!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido pela Beatriz.
+    </footer>
+</body>
+</html>

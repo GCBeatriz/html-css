@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-size: 20px;
+            background-image: linear-gradient(to bottom, #AC8887, #851f2bd7);
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+           background-color: white; 
+           box-shadow: 6px 6px 7px #5a2a2f;
+           width: 450px;
+           padding: 5px;
+           margin: auto;
+           border-radius: 5px;
+        }
+        h1{
+         text-align: left;
+         color: #003459;  
+        }
+        h1#principal{
+            text-shadow: 1px 1px 1px #027aca;
+            text-align: center;
+        }
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color:rgb(155, 0, 0);
+        }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: lighter;
+            color: darkgray;
+            font-size: 15px;
+        }
+        .especial{
+            color: #C1DBB3;
+        }
+        .especial:hover{
+            color: black;
+            text-decoration: none;
+        }
+        .especial::after{
+            content: '⇒';
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+    <h1 id="principal">Personalizando Links</h1>
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</main>
+</body>
+
+</html>
