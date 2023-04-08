@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font: var(--font-padrao)
+}
+
+:root{
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-cordel: 'Passion One', verdana, sans-serif;
+    --font-poema: 'Sriracha', sans-serif;
+}
+
+header {
+    background-color: black;
+    color:white;
+    text-align: center;
+    max-height: 320px;
+}
+
+header > h1{
+    padding: 50px 0px 10px 0px ;
+    font: bolder 6em var(--font-cordel);
+}
+
+main{
+    margin-top: 60px;
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+main p {
+    line-height: 60px;
+    margin: 25px;
+    padding-bottom: 50px;
+    font: 2em var(--font-poema);
+}
+
+.fundo {
+    background: black url(../imagens/close-de-uma-joaninha-sentada-na-petala-de-uma-flor.jpg) fixed;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    height: 500px;
+    box-shadow: inset 8px 8px 5px 0px rgba(0, 0, 0, 0.199);
+}
+
+section.fundo > p {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.personalizado{
+    background-image: url(../imagens/pexels-pixabay-261763.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 8px 8px 5px 0px rgba(0, 0, 0, 0.199);
+}
+
+section.personalizado > p{
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+}
