@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -14,6 +16,10 @@
     --font-poema: 'Sriracha', sans-serif;
 }
 
+body, html{
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color:white;
@@ -23,58 +29,53 @@ header {
 
 header > h1{
     padding: 50px 0px 10px 0px ;
-    font: bolder 6em var(--font-cordel);
+    font: bolder 8vw var(--font-cordel);
+    font-variant: small-caps;
 }
 
-main{
-    margin-top: 60px;
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
     background-color: white;
+    padding: 10vh 0px 10vh 25px;
     max-width: 100%;
     max-height: 100%;
 
 }
-
-main p {
+/* Poderia ter colocado 32px também no padding-bottom da section p */
+section p {
     line-height: 60px;
-    margin: 25px;
-    padding-bottom: 50px;
-    font: 2em var(--font-poema);
+    font: 3.5vw var(--font-poema);
+    padding-bottom: 2em;    
 }
 
-.fundo {
-    background: black url(../imagens/close-de-uma-joaninha-sentada-na-petala-de-uma-flor.jpg) fixed;
-    background-size: cover;
-    color: white;
-    padding: 40px;
-    height: 500px;
-    box-shadow: inset 8px 8px 5px 0px rgba(0, 0, 0, 0.199);
-}
-
-section.fundo > p {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.671);
-    width: 400px;
-    height: 400px;
-    text-align: center;
-}
-
-.personalizado{
-    background-image: url(../imagens/pexels-pixabay-261763.jpg);
+.imagem{
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     box-shadow: inset 8px 8px 5px 0px rgba(0, 0, 0, 0.199);
 }
 
-section.personalizado > p{
+section.imagem > p{
     background-color: rgba(0, 0, 0, 0.712);
     color: white;
-    height: 400px;
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     text-align: center;
 
+}
+
+section#img01{
+    background-image: url(../imagens/background01.jpg);
+    background-position: bottom center;
+}
+
+section#img02{
+    background-image: url(../imagens/background02.jpg);
+    background-position: center center;
 }
 
 a{
@@ -91,8 +92,5 @@ footer{
     background-color: black;
     color: white;
     padding: 5px;
-}
-
-footer p {
     text-align: center;
 }
