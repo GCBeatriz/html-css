@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+    font-family: sans-serif;
+}
+
+caption {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: rgba(53, 63, 63, 0.103);
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+thead, tfoot {
+    background-color: black;
+    color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: black;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: rgba(169, 169, 169, 0.363);
+}
+
+.num{
+    text-align: right;
+}

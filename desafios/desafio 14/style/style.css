@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    height: 300px;
+}
+
+td, th{
+    border: 1px solid black;
+    padding-left: 5px;
+    
+}
+
+thead, .media{
+    background-color: rgb(155, 155, 155);
+    color: white;
+}
+
+.media{
+    text-align: left;
+}
+
+.num{
+    text-align: center;
+}
