@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+caption{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+
+}
+table{
+    border-collapse: collapse;
+    width: 600px;
+}
+td, th{
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(2n){
+    background-color: rgba(0, 139, 139, 0.192);
+}
+
+div#container{
+    overflow-x: auto;
+}
