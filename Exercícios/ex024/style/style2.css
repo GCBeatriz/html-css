@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightgrey;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th{
+    border: 1px solid black;
+}
+
+tr:nth-child(even){
+    background-color: rgba(198, 255, 255, 0.555);
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
