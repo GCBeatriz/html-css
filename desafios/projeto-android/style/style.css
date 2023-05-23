@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(../imagens/fundo-madeira.jpg);
+}
+
+img{
+    display: block;
+    margin: auto;
+    position: relative;
+
+}
+
+iframe{
+    display: block;
+    position: absolute;
+    width: 263px;
+    height: 475px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    border-radius: 200px;
+    width: 50px;
+    padding: 10px;
+}
