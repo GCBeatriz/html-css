@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Projeto login</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                    ambiente.</p>
+                <form action="cadastrofake.php" method="post" autocomplete="on">
+                    <fieldset>
+                        <label for="iemail"><span class="material-symbols-outlined" id="person">person</span></label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail"
+                            autocomplete="email" required minlength="8" maxlength="25">
+
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="isenha"><span class="material-symbols-outlined" id="person">vpn_key</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha"
+                            autocomplete="current-password" required minlength="8" maxlength="25">
+
+                    </fieldset>
+                    <input type="submit" value="Entrar" id="buttom">
+                    <a href="esqueci.html" class="senha">
+                        Esqueci a senha <span class="material-symbols-outlined" id="person">mail</span>
+                    </a>
+                </form>
+            </div>
+    </main>
+    </section>
+
+</body>
+
+</html>
